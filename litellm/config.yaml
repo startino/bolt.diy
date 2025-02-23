@@ -1,0 +1,33 @@
+model_list:
+  - model_name: gpt-4o
+    litellm_params:
+      model: azure/gpt-4o
+      # deployment: azure/gpt-4o
+      api_key: os.environ/AZURE_API_KEY
+      api_base: os.environ/AZURE_API_BASE
+      api_version: '2024-08-01-preview'
+      temperature: 0.7
+  - model_name: gpt-4o-mini
+    litellm_params:
+      model: azure/gpt-4o-mini
+      # deployment: azure/gpt-4o-mini
+      api_key: os.environ/AZURE_API_KEY
+      api_base: os.environ/AZURE_API_BASE
+      api_version: '2024-08-01-preview'
+      temperature: 0.7
+  - model_name: o3-mini
+    litellm_params:
+      model: azure/o3-mini
+      # deployment: azure/o3-mini
+      api_key: os.environ/AZURE_API_KEY
+      api_base: os.environ/AZURE_API_BASE
+      api_version: '2024-08-01-preview'
+      temperature: 0.7
+  - model_name: o1
+    litellm_params:
+      model: azure/o1
+      # deployment: azure/o1
+      api_key: os.environ/AZURE_API_KEY
+      api_base: os.environ/AZURE_API_BASE
+      api_version: '2024-08-01-preview'
+      temperature: 0.7
